@@ -13,8 +13,8 @@ QespTest::QespTest(QWidget* parent)
 
 {
     //modify the port settings on your own
-  port = new QextSerialPort("COM1");
-  port->setBaudRate(BAUD19200);   
+  port = new QextSerialPort("ttyS11");
+  port->setBaudRate(BAUD115200);
   port->setFlowControl(FLOW_OFF);
   port->setParity(PAR_NONE);    
   port->setDataBits(DATA_8);   
